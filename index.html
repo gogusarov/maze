@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Лабиринт</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script async type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+  <div class="manage">
+    <div class="data">
+      <div class="data__item">
+        <label for="maze-width">Ширина лабиринта:</label>
+        <input pattern="^[0-9]+$" type=text id="field-width" value="35" class="data-field">
+      </div>
+      <div class="data__item">
+        <label for="maze-height">Высота лабиринта:</label>
+        <input pattern="^[0-9]+$" type=text id="field-height" value="35" class="data-field">
+      </div>
+    </div>
+    <div class="controls">
+      <input type="button" value="Нарисовать" class="btn-draw controls__item">
+      <input type="button" value="Найти выход" class="btn-find-path controls__item">
+      <input type="button" value="Запустить змейку" class="btn-start-snake controls__item">
+    </div>
+  </div>
+</body>
+</html>
